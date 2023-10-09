@@ -1,7 +1,10 @@
 # Laptop Prediction System (Random Forest)
 1)pip install scikit-learn
+
 2)pip install streamlit (==1.2.2)
+
 3)streamlit run "<path>app.py"
+
 
 ![image](https://github.com/Abirami-Ravikumar/Laptop-Price-Prediction-using-Random-Forest-in-Streamlit/assets/125668679/4cb11069-d136-4013-b24a-da4ada43727d)
 
