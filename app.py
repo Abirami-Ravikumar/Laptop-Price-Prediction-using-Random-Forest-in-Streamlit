@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st
 import pickle
 import numpy as np
-
+import pandas as pd
 
 # from bs4 import BeautifulSoup
 # Call set_page_config() as the first Streamlit command in your script
@@ -109,8 +109,10 @@ elif nav == "Prediction":
 
     # --------------------------------------------------------PREDICTION SYSTEM----------------------------------------
     # import model
-    pipe = pickle.load(open('pipe.pkl', 'rb'))
-    df = pickle.load(open('df.pkl', 'rb'))
+    #pipe = pickle.load(open('pipe.pkl', 'rb'))
+    pipe = pd.compat.pickle_compat.load(open('pipe.pkl','rb')) 
+    #df = pickle.load(open('df.pkl', 'rb'))
+    df = pd.compat.pickle_compat.load(open('df.pkl','rb')) 
 
     st.markdown("Just fill out the specifications your need for you laptop and hit the 'Predict Price' button, and voila! You get the estimated price for the laptop.")
 
